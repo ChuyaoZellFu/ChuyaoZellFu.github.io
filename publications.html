@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Publications - Chuyao Fu</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --primary-color: #2563eb;
+            --primary-dark: #1d4ed8;
+            --text-color: #1f2937;
+            --text-light: #6b7280;
+            --bg-color: #ffffff;
+            --bg-light: #f9fafb;
+            --border-color: #e5e7eb;
+        }
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+            line-height: 1.6;
+            color: var(--text-color);
+            background-color: var(--bg-color);
+        }
+        .navbar {
+            background: var(--bg-color);
+            border-bottom: 1px solid var(--border-color);
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+        .nav-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 1rem 2rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .nav-logo {
+            font-size: 1.5rem;
+            font-weight: 700;
+            color: var(--text-color);
+            text-decoration: none;
+        }
+        .nav-menu {
+            display: flex;
+            list-style: none;
+            gap: 2rem;
+        }
+        .nav-link {
+            color: var(--text-light);
+            text-decoration: none;
+            font-weight: 500;
+            transition: color 0.2s;
+        }
+        .nav-link:hover { color: var(--primary-color); }
+        .main-content {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 2rem;
+            min-height: calc(100vh - 200px);
+        }
+        h1 {
+            font-size: 2.5rem;
+            font-weight: 700;
+            margin-bottom: 2rem;
+        }
+        h2 {
+            font-size: 1.75rem;
+            font-weight: 700;
+            margin: 2rem 0 1rem;
+            color: var(--text-color);
+        }
+        .publication-card {
+            background: var(--bg-light);
+            border-radius: 1rem;
+            padding: 2rem;
+            margin-bottom: 2rem;
+            border: 2px solid var(--primary-color);
+        }
+        .pub-badge {
+            display: inline-block;
+            background: var(--primary-color);
+            color: white;
+            padding: 0.25rem 0.75rem;
+            border-radius: 1rem;
+            font-size: 0.875rem;
+            font-weight: 600;
+            margin-bottom: 1rem;
+        }
+        .pub-title {
+            font-size: 1.5rem;
+            margin-bottom: 0.5rem;
+            font-weight: 600;
+        }
+        .pub-authors {
+            color: var(--text-light);
+            margin-bottom: 0.5rem;
+        }
+        .pub-venue {
+            color: var(--primary-color);
+            font-weight: 600;
+            margin-bottom: 1rem;
+        }
+        .pub-abstract, .pub-highlights {
+            margin: 1.5rem 0;
+        }
+        .pub-abstract h4, .pub-highlights h4 {
+            font-size: 1.1rem;
+            margin-bottom: 0.5rem;
+        }
+        .pub-abstract p {
+            margin-bottom: 0.75rem;
+            line-height: 1.7;
+        }
+        .pub-highlights ul {
+            padding-left: 1.5rem;
+        }
+        .pub-highlights li {
+            margin-bottom: 0.75rem;
+            line-height: 1.6;
+        }
+        .pub-links {
+            display: flex;
+            gap: 1rem;
+            margin-top: 1.5rem;
+        }
+        .pub-link {
+            padding: 0.5rem 1rem;
+            background: var(--primary-color);
+            color: white;
+            text-decoration: none;
+            border-radius: 0.5rem;
+        }
+        .pub-link.disabled {
+            background: var(--text-light);
+            cursor: not-allowed;
+        }
+        .research-statement {
+            margin-top: 3rem;
+            padding: 2rem;
+            background: var(--bg-light);
+            border-radius: 1rem;
+        }
+        .interest-tags {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.75rem;
+            margin: 1rem 0 1.5rem;
+        }
+        .interest-tag {
+            background: white;
+            padding: 0.5rem 1rem;
+            border-radius: 2rem;
+            font-size: 0.875rem;
+            border: 1px solid var(--border-color);
+        }
+        .footer {
+            background: var(--bg-light);
+            border-top: 1px solid var(--border-color);
+            padding: 2rem;
+            text-align: center;
+        }
+        .footer p {
+            color: var(--text-light);
+            margin-bottom: 0.5rem;
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="/" class="nav-logo">Chuyao Fu</a>
+            <ul class="nav-menu">
+                <li><a href="/" class="nav-link">Home</a></li>
+                <li><a href="/publications.html" class="nav-link">Publications</a></li>
+                <li><a href="/projects.html" class="nav-link">Projects</a></li>
+                <li><a href="/assets/cv.pdf" class="nav-link">CV</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <main class="main-content">
+        <h1>Publications</h1>
+
+        <section class="publication-section">
+            <h2>Under Review</h2>
+            
+            <div class="publication-card">
+                <div class="pub-badge">First Author</div>
+                <h3 class="pub-title">Token-World: Native Latent Dynamic World Model for Vision-Language-Action Models</h3>
+                <p class="pub-authors"><strong>Chuyao Fu</strong>, [Co-author names]</p>
+                <p class="pub-venue">Under Review at ECCV 2026</p>
+                
+                <div class="pub-abstract">
+                    <h4>Abstract</h4>
+                    <p>
+                        Current world models for robot learning typically predict future RGB images, which are then 
+                        encoded into visual tokens by Vision-Language-Action (VLA) models. This RGB-centric approach 
+                        creates an information bottleneck: VAE encoding/decoding introduces errors and inefficiencies.
+                    </p>
+                    <p>
+                        We propose <strong>Token-World</strong>, a native latent dynamic world model that predicts 
+                        directly in the <strong>Visual Token Space</strong> of VLA models. By bypassing the RGB 
+                        representation entirely, our model achieves superior prediction accuracy and computational 
+                        efficiency.
+                    </p>
+                </div>
+                
+                <div class="pub-highlights">
+                    <h4>Key Contributions</h4>
+                    <ul>
+                        <li>
+                            <strong>Novel Representation:</strong> First world model to operate natively in VLA visual 
+                            token space, eliminating the RGB bottleneck
+                        </li>
+                        <li>
+                            <strong>Superior Performance:</strong> 15% improvement in prediction accuracy over RGB-based 
+                            baselines
+                        </li>
+                        <li>
+                            <strong>Efficiency Gains:</strong> 4× faster inference, enabling real-time robot control
+                        </li>
+                        <li>
+                            <strong>VLA Integration:</strong> Demonstrated effectiveness on VLA trajectory evaluation 
+                            tasks
+                        </li>
+                    </ul>
+                </div>
+                
+                <div class="pub-links">
+                    <span class="pub-link disabled">Paper (Coming Soon)</span>
+                    <span class="pub-link disabled">Code (Coming Soon)</span>
+                    <span class="pub-link disabled">Project Page (Coming Soon)</span>
+                </div>
+            </div>
+        </section>
+
+        <section class="publication-section">
+            <h2>Published</h2>
+            <p style="color: var(--text-light);">More publications coming soon...</p>
+        </section>
+
+        <section class="research-statement">
+            <h2>Research Interests</h2>
+            <div class="interest-tags">
+                <span class="interest-tag">World Models</span>
+                <span class="interest-tag">Vision-Language-Action Models</span>
+                <span class="interest-tag">Robot Learning</span>
+                <span class="interest-tag">Embodied AI</span>
+                <span class="interest-tag">Imitation Learning</span>
+                <span class="interest-tag">Reinforcement Learning</span>
+            </div>
+            <p>
+                I am broadly interested in enabling robots to develop intelligent behavior through learning and 
+                interaction. My current focus is on developing efficient world models that can predict future 
+                states in a compact latent space, enabling real-time robot planning and control.
+            </p>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="footer-content">
+            <p>&copy; 2026 Chuyao Fu. All rights reserved.</p>
+            <p>PhD Applicant in Robot Learning</p>
+        </div>
+    </footer>
+</body>
+</html>

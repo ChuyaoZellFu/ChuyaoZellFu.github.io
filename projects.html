@@ -1,0 +1,382 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projects - Chuyao Fu</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --primary-color: #2563eb;
+            --primary-dark: #1d4ed8;
+            --text-color: #1f2937;
+            --text-light: #6b7280;
+            --bg-color: #ffffff;
+            --bg-light: #f9fafb;
+            --border-color: #e5e7eb;
+        }
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+            line-height: 1.6;
+            color: var(--text-color);
+            background-color: var(--bg-color);
+        }
+        .navbar {
+            background: var(--bg-color);
+            border-bottom: 1px solid var(--border-color);
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+        .nav-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 1rem 2rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .nav-logo {
+            font-size: 1.5rem;
+            font-weight: 700;
+            color: var(--text-color);
+            text-decoration: none;
+        }
+        .nav-menu {
+            display: flex;
+            list-style: none;
+            gap: 2rem;
+        }
+        .nav-link {
+            color: var(--text-light);
+            text-decoration: none;
+            font-weight: 500;
+            transition: color 0.2s;
+        }
+        .nav-link:hover { color: var(--primary-color); }
+        .main-content {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 2rem;
+            min-height: calc(100vh - 200px);
+        }
+        h1 {
+            font-size: 2.5rem;
+            font-weight: 700;
+            margin-bottom: 1rem;
+        }
+        h2 {
+            font-size: 1.75rem;
+            font-weight: 700;
+            margin: 2.5rem 0 1rem;
+            color: var(--text-color);
+        }
+        .projects-intro {
+            font-size: 1.1rem;
+            color: var(--text-light);
+            margin-bottom: 2rem;
+        }
+        .project-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 1.5rem;
+        }
+        .project-card {
+            background: var(--bg-light);
+            border-radius: 1rem;
+            padding: 1.5rem;
+            transition: transform 0.2s, box-shadow 0.2s;
+        }
+        .project-card:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
+        }
+        .project-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            margin-bottom: 1rem;
+        }
+        .project-header h3 {
+            font-size: 1.25rem;
+            font-weight: 600;
+        }
+        .project-status {
+            padding: 0.25rem 0.5rem;
+            border-radius: 0.25rem;
+            font-size: 0.75rem;
+            font-weight: 600;
+        }
+        .project-status.ongoing {
+            background: #dbeafe;
+            color: #1e40af;
+        }
+        .project-status.completed {
+            background: #d1fae5;
+            color: #065f46;
+        }
+        .project-grade {
+            background: #fef3c7;
+            color: #92400e;
+            padding: 0.25rem 0.5rem;
+            border-radius: 0.25rem;
+            font-size: 0.75rem;
+            font-weight: 600;
+        }
+        .project-description {
+            color: var(--text-light);
+            margin-bottom: 1rem;
+            line-height: 1.6;
+        }
+        .project-tech {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.5rem;
+            margin-bottom: 1rem;
+        }
+        .tech-tag {
+            background: white;
+            padding: 0.25rem 0.5rem;
+            border-radius: 0.25rem;
+            font-size: 0.75rem;
+            border: 1px solid var(--border-color);
+        }
+        .project-link {
+            color: var(--primary-color);
+            text-decoration: none;
+            font-weight: 500;
+        }
+        .project-link.disabled {
+            color: var(--text-light);
+        }
+        .gpa-badge {
+            background: var(--primary-color);
+            color: white;
+            padding: 0.25rem 0.75rem;
+            border-radius: 1rem;
+            font-size: 0.875rem;
+            font-weight: 600;
+            margin-left: 0.5rem;
+        }
+        .course-note {
+            margin-top: 1.5rem;
+            color: var(--text-light);
+            font-style: italic;
+        }
+        .skills-section {
+            margin-top: 3rem;
+        }
+        .skills-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 1.5rem;
+        }
+        .skill-category h3 {
+            font-size: 1.1rem;
+            margin-bottom: 0.75rem;
+        }
+        .skill-tags {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.5rem;
+        }
+        .skill-tag {
+            padding: 0.5rem 1rem;
+            border-radius: 2rem;
+            font-size: 0.875rem;
+            font-weight: 500;
+        }
+        .skill-tag.expert {
+            background: #dbeafe;
+            color: #1e40af;
+        }
+        .skill-tag.intermediate {
+            background: #f3f4f6;
+            color: #4b5563;
+        }
+        .footer {
+            background: var(--bg-light);
+            border-top: 1px solid var(--border-color);
+            padding: 2rem;
+            text-align: center;
+        }
+        .footer p {
+            color: var(--text-light);
+            margin-bottom: 0.5rem;
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="/" class="nav-logo">Chuyao Fu</a>
+            <ul class="nav-menu">
+                <li><a href="/" class="nav-link">Home</a></li>
+                <li><a href="/publications.html" class="nav-link">Publications</a></li>
+                <li><a href="/projects.html" class="nav-link">Projects</a></li>
+                <li><a href="/assets/cv.pdf" class="nav-link">CV</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <main class="main-content">
+        <h1>Projects</h1>
+        
+        <p class="projects-intro">
+            A selection of my research projects and coursework. My projects span world models, 
+            robot learning, and embodied AI, with a focus on practical implementations using 
+            PyTorch, ROS, and simulation environments.
+        </p>
+
+        <section class="project-category">
+            <h2>Research Projects</h2>
+            
+            <div class="project-grid">
+                <div class="project-card">
+                    <div class="project-header">
+                        <h3>Visual Token Space World Models</h3>
+                        <span class="project-status ongoing">Ongoing</span>
+                    </div>
+                    <p class="project-description">
+                        Developing a world model that predicts robot dynamics directly in the visual token 
+                        space of VLA models, achieving 15% better accuracy and 4× speedup.
+                    </p>
+                    <div class="project-tech">
+                        <span class="tech-tag">PyTorch</span>
+                        <span class="tech-tag">Transformers</span>
+                        <span class="tech-tag">VLA Models</span>
+                    </div>
+                    <a href="/publications.html" class="project-link">Paper →</a>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-header">
+                        <h3>Humanoid Robot RL with Isaac Sim</h3>
+                        <span class="project-status completed">Completed</span>
+                    </div>
+                    <p class="project-description">
+                        Implemented reinforcement learning algorithms for humanoid robot locomotion and 
+                        manipulation tasks in NVIDIA Isaac Sim simulation environment.
+                    </p>
+                    <div class="project-tech">
+                        <span class="tech-tag">Isaac Sim</span>
+                        <span class="tech-tag">RL</span>
+                        <span class="tech-tag">PyTorch</span>
+                    </div>
+                    <span class="project-link disabled">Code (Private)</span>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-header">
+                        <h3>Robot Manipulation Benchmarks</h3>
+                        <span class="project-status completed">Completed</span>
+                    </div>
+                    <p class="project-description">
+                        Evaluated and benchmarked various robot manipulation policies on RoboTwin, LIBERO, 
+                        and RLBench datasets. Analyzed generalization across different tasks and environments.
+                    </p>
+                    <div class="project-tech">
+                        <span class="tech-tag">RoboTwin</span>
+                        <span class="tech-tag">LIBERO</span>
+                        <span class="tech-tag">RLBench</span>
+                    </div>
+                    <span class="project-link disabled">Report (Available upon request)</span>
+                </div>
+            </div>
+        </section>
+
+        <section class="project-category">
+            <h2>Course Projects <span class="gpa-badge">GPA: 3.90/4.0</span></h2>
+            
+            <div class="project-grid">
+                <div class="project-card course">
+                    <div class="project-header">
+                        <h3>Machine Learning Final Project</h3>
+                        <span class="project-grade">Grade: A+</span>
+                    </div>
+                    <p class="project-description">
+                        Implemented and compared various deep learning architectures for computer vision tasks.
+                        Achieved state-of-the-art results on the course benchmark.
+                    </p>
+                    <div class="project-tech">
+                        <span class="tech-tag">PyTorch</span>
+                        <span class="tech-tag">CNN</span>
+                        <span class="tech-tag">Vision Transformers</span>
+                    </div>
+                </div>
+
+                <div class="project-card course">
+                    <div class="project-header">
+                        <h3>Robotics Systems Design</h3>
+                        <span class="project-grade">Grade: A</span>
+                    </div>
+                    <p class="project-description">
+                        Designed and implemented a complete robotic system for autonomous navigation.
+                        Integrated perception, planning, and control modules.
+                    </p>
+                    <div class="project-tech">
+                        <span class="tech-tag">ROS</span>
+                        <span class="tech-tag">SLAM</span>
+                        <span class="tech-tag">Path Planning</span>
+                    </div>
+                </div>
+            </div>
+            
+            <p class="course-note">
+                Course projects demonstrate strong academic performance. Detailed descriptions available upon request.
+            </p>
+        </section>
+
+        <section class="skills-section">
+            <h2>Technical Skills</h2>
+            
+            <div class="skills-grid">
+                <div class="skill-category">
+                    <h3>Programming</h3>
+                    <div class="skill-tags">
+                        <span class="skill-tag expert">Python</span>
+                        <span class="skill-tag intermediate">C++</span>
+                        <span class="skill-tag intermediate">CUDA</span>
+                    </div>
+                </div>
+                
+                <div class="skill-category">
+                    <h3>Machine Learning</h3>
+                    <div class="skill-tags">
+                        <span class="skill-tag expert">PyTorch</span>
+                        <span class="skill-tag expert">Transformers</span>
+                        <span class="skill-tag intermediate">JAX</span>
+                    </div>
+                </div>
+                
+                <div class="skill-category">
+                    <h3>Robotics</h3>
+                    <div class="skill-tags">
+                        <span class="skill-tag expert">ROS</span>
+                        <span class="skill-tag expert">Isaac Sim</span>
+                        <span class="skill-tag intermediate">Gazebo</span>
+                    </div>
+                </div>
+                
+                <div class="skill-category">
+                    <h3>Tools & Platforms</h3>
+                    <div class="skill-tags">
+                        <span class="skill-tag expert">Linux</span>
+                        <span class="skill-tag expert">Git</span>
+                        <span class="skill-tag intermediate">Docker</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="footer-content">
+            <p>&copy; 2026 Chuyao Fu. All rights reserved.</p>
+            <p>PhD Applicant in Robot Learning</p>
+        </div>
+    </footer>
+</body>
+</html>
