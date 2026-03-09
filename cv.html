@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CV - Chuyao Fu</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --primary-color: #2563eb;
+            --primary-dark: #1d4ed8;
+            --text-color: #1f2937;
+            --text-light: #6b7280;
+            --bg-color: #ffffff;
+            --bg-light: #f9fafb;
+            --border-color: #e5e7eb;
+        }
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+            line-height: 1.6;
+            color: var(--text-color);
+            background-color: var(--bg-color);
+        }
+        .navbar {
+            background: var(--bg-color);
+            border-bottom: 1px solid var(--border-color);
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+        .nav-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 1rem 2rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .nav-logo {
+            font-size: 1.5rem;
+            font-weight: 700;
+            color: var(--text-color);
+            text-decoration: none;
+        }
+        .nav-menu {
+            display: flex;
+            list-style: none;
+            gap: 2rem;
+        }
+        .nav-link {
+            color: var(--text-light);
+            text-decoration: none;
+            font-weight: 500;
+            transition: color 0.2s;
+        }
+        .nav-link:hover { color: var(--primary-color); }
+        .main-content {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 2rem;
+            min-height: calc(100vh - 200px);
+        }
+        h1 {
+            font-size: 2.5rem;
+            font-weight: 700;
+            margin-bottom: 0.5rem;
+        }
+        .subtitle {
+            color: var(--text-light);
+            font-size: 1.1rem;
+            margin-bottom: 2rem;
+        }
+        .cv-section {
+            margin-bottom: 2.5rem;
+        }
+        .cv-section h2 {
+            font-size: 1.5rem;
+            font-weight: 700;
+            margin-bottom: 1rem;
+            color: var(--primary-color);
+            border-bottom: 2px solid var(--border-color);
+            padding-bottom: 0.5rem;
+        }
+        .cv-item {
+            margin-bottom: 1.5rem;
+        }
+        .cv-item-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            margin-bottom: 0.25rem;
+        }
+        .cv-item-title {
+            font-weight: 600;
+            font-size: 1.1rem;
+        }
+        .cv-item-date {
+            color: var(--text-light);
+            font-size: 0.9rem;
+        }
+        .cv-item-subtitle {
+            color: var(--text-light);
+            font-style: italic;
+            margin-bottom: 0.5rem;
+        }
+        .cv-item-description {
+            color: var(--text-color);
+            line-height: 1.6;
+        }
+        .cv-item-description ul {
+            padding-left: 1.5rem;
+            margin-top: 0.5rem;
+        }
+        .cv-item-description li {
+            margin-bottom: 0.25rem;
+        }
+        .highlight-box {
+            background: var(--bg-light);
+            border-left: 4px solid var(--primary-color);
+            padding: 1rem 1.5rem;
+            margin: 1.5rem 0;
+            border-radius: 0 0.5rem 0.5rem 0;
+        }
+        .gpa-highlight {
+            font-size: 1.25rem;
+            font-weight: 700;
+            color: var(--primary-color);
+        }
+        .download-section {
+            text-align: center;
+            padding: 2rem;
+            background: var(--bg-light);
+            border-radius: 1rem;
+            margin: 2rem 0;
+        }
+        .download-btn {
+            display: inline-block;
+            padding: 1rem 2rem;
+            background: var(--primary-color);
+            color: white;
+            text-decoration: none;
+            border-radius: 0.5rem;
+            font-weight: 600;
+            margin-top: 1rem;
+        }
+        .download-btn:hover {
+            background: var(--primary-dark);
+        }
+        .footer {
+            background: var(--bg-light);
+            border-top: 1px solid var(--border-color);
+            padding: 2rem;
+            text-align: center;
+        }
+        .footer p {
+            color: var(--text-light);
+            margin-bottom: 0.5rem;
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="/" class="nav-logo">Chuyao Fu</a>
+            <ul class="nav-menu">
+                <li><a href="/" class="nav-link">Home</a></li>
+                <li><a href="/publications.html" class="nav-link">Publications</a></li>
+                <li><a href="/projects.html" class="nav-link">Projects</a></li>
+                <li><a href="/cv.html" class="nav-link">CV</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <main class="main-content">
+        <h1>Curriculum Vitae</h1>
+        <p class="subtitle">Chuyao Fu — PhD Applicant in Robot Learning</p>
+
+        <div class="highlight-box">
+            <p><strong>Quick Stats:</strong></p>
+            <p>GPA: <span class="gpa-highlight">3.90/4.0</span> | SUSTech | ECCV 2026 Under Review</p>
+        </div>
+
+        <section class="cv-section">
+            <h2>Education</h2>
+            <div class="cv-item">
+                <div class="cv-item-header">
+                    <span class="cv-item-title">B.Eng. in Electronic Engineering</span>
+                    <span class="cv-item-date">2022 - 2026 (Expected)</span>
+                </div>
+                <div class="cv-item-subtitle">Southern University of Science and Technology (SUSTech)</div>
+                <div class="cv-item-description">
+                    <ul>
+                        <li><strong>GPA: 3.90/4.0</strong></li>
+                        <li>Relevant coursework: Machine Learning, Computer Vision, Robotics, Reinforcement Learning</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <section class="cv-section">
+            <h2>Research Experience</h2>
+            <div class="cv-item">
+                <div class="cv-item-header">
+                    <span class="cv-item-title">Visual Token Space World Models</span>
+                    <span class="cv-item-date">2025 - Present</span>
+                </div>
+                <div class="cv-item-subtitle">First Author | Under Review at ECCV 2026</div>
+                <div class="cv-item-description">
+                    <ul>
+                        <li>Developed a novel world model that predicts robot dynamics directly in visual token space</li>
+                        <li>Achieved <strong>15% improvement</strong> in prediction accuracy over RGB-based baselines</li>
+                        <li>Enabled <strong>4× faster</strong> inference for real-time robot control</li>
+                        <li>Demonstrated effectiveness on VLA trajectory evaluation tasks</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="cv-item">
+                <div class="cv-item-header">
+                    <span class="cv-item-title">Humanoid Robot RL</span>
+                    <span class="cv-item-date">2025</span>
+                </div>
+                <div class="cv-item-subtitle">Research Internship</div>
+                <div class="cv-item-description">
+                    <ul>
+                        <li>Implemented RL algorithms for humanoid robot locomotion in NVIDIA Isaac Sim</li>
+                        <li>Trained policies for manipulation tasks using PPO and SAC</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <section class="cv-section">
+            <h2>Publications</h2>
+            <div class="cv-item">
+                <div class="cv-item-header">
+                    <span class="cv-item-title">Token-World: Native Latent Dynamic World Model for Vision-Language-Action Models</span>
+                    <span class="cv-item-date">2026</span>
+                </div>
+                <div class="cv-item-subtitle">Chuyao Fu, et al. | Under Review at ECCV 2026</div>
+            </div>
+        </section>
+
+        <section class="cv-section">
+            <h2>Technical Skills</h2>
+            <div class="cv-item">
+                <div class="cv-item-description">
+                    <ul>
+                        <li><strong>Programming:</strong> Python (expert), C++ (intermediate), CUDA (intermediate)</li>
+                        <li><strong>Machine Learning:</strong> PyTorch (expert), Transformers (expert), JAX (intermediate)</li>
+                        <li><strong>Robotics:</strong> ROS (expert), Isaac Sim (expert), Gazebo (intermediate)</li>
+                        <li><strong>Tools:</strong> Linux (expert), Git (expert), Docker (intermediate)</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <section class="cv-section">
+            <h2>Research Interests</h2>
+            <div class="cv-item">
+                <div class="cv-item-description">
+                    World Models, Vision-Language-Action Models, Robot Learning, Embodied AI, 
+                    Imitation Learning, Reinforcement Learning
+                </div>
+            </div>
+        </section>
+
+        <div class="download-section">
+            <p>Full CV available upon request</p>
+            <a href="mailto:12310306@mail.sustech.edu.cn" class="download-btn">Request Full CV</a>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <div class="footer-content">
+            <p>&copy; 2026 Chuyao Fu. All rights reserved.</p>
+            <p>PhD Applicant in Robot Learning</p>
+        </div>
+    </footer>
+</body>
+</html>
