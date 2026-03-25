@@ -1,0 +1,192 @@
+\documentclass[10pt,a4paper]{article}
+\usepackage[a4paper,margin=0.72in]{geometry}
+\usepackage{array,tabularx}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{titlesec}
+\usepackage{xcolor}
+\usepackage{fontawesome5}
+\usepackage{newtxtext,newtxmath}
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\pagestyle{empty}
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{0pt}
+\definecolor{accent}{HTML}{111111}
+\definecolor{textgray}{HTML}{444444}
+
+\titleformat{\section}
+  {\large\bfseries\scshape\color{accent}}
+  {}{0em}{}
+  [\vspace{0.18em}\titlerule]
+\titlespacing*{\section}{0pt}{0.75em}{0.45em}
+
+\newcommand{\entry}[4]{%
+  \textbf{#1} \hfill #2\\
+  \textit{#3} \hfill \textit{#4}\\[-0.35em]
+}
+
+\newcommand{\cvitem}[1]{\item \small #1}
+\newcommand{\contactsep}{\hspace{0.7em}{\color{textgray}|}\hspace{0.7em}}
+
+\begin{document}
+
+{\centering
+    {\LARGE\bfseries Chuyao Fu}\\[0.45em]
+    {\small
+    \faEnvelope\ \href{mailto:your.email@outlook.com}{12310306@mail.sustech.edu.cn}
+    \contactsep
+    \faGithub\ \href{https://github.com/yourname}{github.com/ChuyaoZellFu}
+    \contactsep
+    \faGlobe\ \href{https://your-website.com}{https://chuyaozellfu.github.io/}
+    \contactsep
+    \faPhone\ +86-153-4733-9211
+    }\\[0.3em]
+    {\small \color{textgray}Shenzhen, China \;\; / \;\; Information Engineering undergraduate seeking research opportunities in embodied AI and robot learning}
+\par}
+
+\section*{Education}
+\entry{Southern University of Science and Technology}{Sept. 2023 - Jun. 2027}{B.Eng. in Electronic Information Engineering}{GPA: 3.90/4.00 Rank: 3/46}
+\begin{itemize}[leftmargin=1.2em, topsep=0.2em, itemsep=0.18em]
+  \cvitem{Primarily A+/A foundational courses: Data Structure and Algorithm Analysis, Probability and Statistics, Machine Learning, Robotic Motion and Control Method, Microcomputer Principles and Microsystems, Digital Signal Processing, Analog/Digital Circuits, Signal and Systems}
+  \cvitem{Research Interest: Embodied AI, Vision-Language-Action Models, World Models, Reinforcement Learning}
+
+\end{itemize}
+
+\section*{Publications}
+
+\noindent
+\textbf{ProDrive:} Proactive Planning for Autonomous Driving via Ego-Environment Co-Evolution \\
+\textbf{Chuyao Fu}, S. Gan, Z. Ouyang, Y. Rui, Z. Qian, X. Chi, S. Han, J. Wang, Z. Hong \\
+\textit{CVPR 2026 GigaBrain Challenge Workshop (Poster)}
+
+\vspace{0.9em}
+
+\noindent
+
+\textbf{Token-World:} Native Latent Dynamic World Model for Vision-Language-Action Models\\
+\textbf{Chuyao Fu}, X. Chi, H. Li, Y. Rui, Z. Qian, Y.-K. Wang, X. Zhang, Y. Lou, H. Cheng, Y. Guo, S. Han, S. Zhang.\\
+\textit{ECCV 2026 (under review)}
+
+\vspace{0.9em}
+
+\noindent
+\textbf{EchoArena:} Mutual Benchmarking of World Models and VLA Policies\\
+Y.-K. Wang, K. Zhang, X. Chi, T. Chen, S. Huang, \textbf{Chuyao Fu}, T. Guo, P. Jia, Y. Qin, K. Ge, S. Qian, W. Mi, Z. Qian, J. Li, Q. Wuwu, S. Zhang\\
+\textit{ECCV 2026 (under review)}
+
+\vspace{0.9em}
+
+\noindent
+\textbf{FORCE:} Efficient VLA Reinforcement Fine-Tuning via Value-Calibrated Warm-up and Self-Distillation\\ S. Zhang, Y. Lou, H. Cheng, Y. Guo, \textbf{Chuyao Fu}, Y. Lyu, X. Zhang, H. Li, P. Wang, Z. Wang, S. Zhang\\
+\textit{ICML 2026 (under review)}
+
+\vspace{0.9em}
+
+\noindent
+\textbf{Predicting What Matters:} Robust Generalist Robot Policy Learning via Future Semantic Mask\\
+Y. Lou, X. Chi, X. Zhang, Z. Qian, C. Li, R. Zhang, Y. Lyu, G. Song, \textbf{Chuyao Fu}, H. Xu, P. Wang, S. Zhang\\
+\textit{ICML 2026 (under review)}
+
+\section*{Research Experience}
+
+\entry{Robotics and Computer Vision Lab, Southern University of Science and Technology}{Sep. 2024 -- Present}{Undergraduate Researcher}{Supervisor: Prof. Hong Zhang}
+\begin{itemize}[leftmargin=1.2em, topsep=0.2em, itemsep=0.18em]
+  \cvitem{\textbf{Topics:} Social Navigation and Autonomous Driving.}
+  \begin{itemize}[leftmargin=1.4em, topsep=0.15em, itemsep=0.12em]
+    \item Contributed to \textbf{TPT-Bench} data collection for social navigation and gained hands-on experience with ROS bag processing, multisensor synchronization, and data preprocessing (\textit{paper under review at IJRR}).
+    \item Independently proposed \textbf{ProDrive}, a proactive autonomous driving framework that jointly trains a driving planner and a BEV world model via \emph{ego-environment co-evolution}.
+    \item Demonstrated stronger performance than several prior world-model-based driving frameworks on NAVSIM v1, improving both navigation efficiency and safety.
+    \item \textbf{First author}; led method design, experiments, and manuscript preparation. Accepted by the \textit{CVPR 2026 GigaBrain Challenge Workshop}.
+  \end{itemize}
+\end{itemize}
+
+\entry{HMI Lab, School of Computer Science, Peking University}{Jun. 2025 -- Present}{Undergraduate Researcher}{Supervisor: Prof. Shanghang Zhang}
+\begin{itemize}[leftmargin=1.2em, topsep=0.2em, itemsep=0.18em]
+  \cvitem{\textbf{Topic:} Vision-Language-Action Models, World Models, and Latent-Space Simulation.}
+  \begin{itemize}[leftmargin=1.4em, topsep=0.15em, itemsep=0.12em]
+    \item Proposed \textbf{Token-World}, a latent world model for VLA systems that predicts future visual tokens directly in token space, eliminating intermediate RGB reconstruction.
+    \item Designed a spatio-temporal multimodal Transformer with GRU-enhanced temporal modeling for action-conditioned long-horizon prediction.
+    \item Combined flow matching with diffusion forcing to improve rollout stability and reduce autoregressive error accumulation.
+    \item Developed a latent reward model and imagined rollout evaluation pipeline for policy assessment in latent space.
+    \item Outperformed strong RGB-based world-model baselines on RoboTwin in rollout error, semantic similarity, and inference speed.
+    \item \textbf{First author}; led method design, experiments, and manuscript preparation. Submitted to \textit{ECCV 2026} (under review).
+  \end{itemize}
+\end{itemize}
+
+\entry{Beijing Academy of Artificial Intelligence}{Jun. 2025 -- Nov. 2025}{Research Intern, Embodied Multimodal Large Models Research Center}{Mentor: Xiaojie Zhang}
+\begin{itemize}[leftmargin=1.2em, topsep=0.2em, itemsep=0.18em]
+  \cvitem{\textbf{Topic:} Reinforcement Learning for Vision-Language-Action Models and Flow-Based Robot Policies.}
+  \begin{itemize}[leftmargin=1.4em, topsep=0.15em, itemsep=0.12em]
+    \item Reproduced representative VLA-RL and robot policy post-training frameworks, including \textit{RLinf}, \textit{SimpleVLA-RL}, \textit{RL4VLA}, and \textit{DSRL}.
+    \item Investigated reinforcement learning objectives for flow-based robot policies, focusing on training stability, inference efficiency, and compatibility with modern VLA backbones.
+    \item Contributed to the early development of the \textbf{FORCE} project through idea exploration, baseline execution, and result organization.
+    \item Supported manuscript preparation, including paper polishing and figure refinement; co-authored an \textit{ICML 2026} submission (under review).
+  \end{itemize}
+\end{itemize}
+
+\section*{Work Experience}
+\entry{XtalPi}{Jan. 2026 -- Present}{Research Intern, Future Chemistry Department}{Shenzhen}
+\begin{itemize}[leftmargin=1.2em, topsep=0.2em, itemsep=0.18em]
+  \cvitem{\textbf{Topic:} Humanoid Robots for Laboratory Automation; Vision-Language-Action Policy Learning and Deployment.}
+  \begin{itemize}[leftmargin=1.4em, topsep=0.15em, itemsep=0.12em]
+    \item Trained VLA policies for humanoid robot manipulation in laboratory environments, focusing on tool use and structured object interaction.
+    \item Deployed policies on real humanoid robot platforms and integrated perception, policy inference, and control for real-world execution.
+    \item Developed manipulation capabilities for representative laboratory instruments and containers in automated bio-lab scenarios.
+    \item Conducted iterative real-robot evaluation and failure analysis to improve deployment robustness.
+  \end{itemize}
+\end{itemize}
+
+\entry{Beijing Academy of Artificial Intelligence}{Jun. 2025 -- Nov. 2025}{Research Intern, Embodied Multimodal Large Models Research Center}{Beijing}
+\begin{itemize}[leftmargin=1.2em, topsep=0.2em, itemsep=0.18em]
+  \cvitem{\textbf{Topic:} Pretraining Data Pipelines for Vision-Language-Action and Vision-Language Models.}
+  \begin{itemize}[leftmargin=1.4em, topsep=0.15em, itemsep=0.12em]
+    \item Processed embodied datasets including \textit{AgiBot-World} and \textit{DROID} for large-scale VLA pretraining.
+    \item Performed action normalization, action tokenization, and dataset reorganization into structured \texttt{json} training format.
+    \item Standardized multimodal trajectory data for compatibility with large-scale VLA pretraining pipelines.
+    \item Contributed to VLM data preprocessing by adding grounding boxes as object-aware visual-language supervision.
+  \end{itemize}
+\end{itemize}
+
+\section*{Selected Course Projects}
+
+\entry{RL-based Locomotion Control for Unitree G1}{Mar. 2026 -- Present}{Humanoid Reinforcement Learning}{Project Leader}
+\begin{itemize}[leftmargin=1.2em, topsep=0.2em, itemsep=0.18em]
+  \cvitem{Developed an RL-based humanoid locomotion pipeline with simulation training, cross-simulator validation, and real-robot deployment on Unitree G1.}
+\end{itemize}
+
+\entry{Raspberry Pi-based Robotic Arm Control}{Nov. 2025 -- Jan. 2026}{Embedded Systems / Robotics}{Project Leader}
+\begin{itemize}[leftmargin=1.2em, topsep=0.2em, itemsep=0.18em]
+  \cvitem{Implemented GPIO- and PWM-based motor control on Raspberry Pi to drive a 3D-printed robotic arm for grasping and manipulation.}
+\end{itemize}
+
+\entry{Desktop Manipulation via 3D Diffusion Policy}{Mar. 2025 -- Jun. 2025}{Robot Learning / 3D Vision}{Project Leader}
+\begin{itemize}[leftmargin=1.2em, topsep=0.2em, itemsep=0.18em]
+  \cvitem{Built a 3D manipulation learning pipeline with RealSense D435 sensing, manual camera calibration, point-cloud generation, and Diffusion Policy training for tabletop tasks.}
+\end{itemize}
+
+\section*{Leadership and Service}
+\entry{Class Leader, Class 2303}{2024 -- 2025}{University Student Affairs / Class Committee}{}
+\begin{itemize}[leftmargin=1.2em, topsep=0.2em, itemsep=0.18em]
+  \cvitem{Organized class activities and a team-building event in Damesha, including planning, vendor coordination, budgeting, and procurement.}
+  \cvitem{Coordinated materials for class awards; the class received honors including Excellent Undergraduate Academic Style, Five Four Red Flag Youth League, Best Sports Team, and Best Popularity Class.}
+  \cvitem{Managed monthly class fee collection, youth league registration, member evaluation, meeting logistics, and routine communication of academic and administrative notices.}
+\end{itemize}
+
+\section*{Honors and Awards}
+\begin{itemize}[leftmargin=1.2em, topsep=0.2em, itemsep=0.18em]
+  \cvitem{Class-level and university honors through collective leadership contributions, including Excellent Undergraduate Academic Style and Five Four Red Flag Youth League.}
+  \cvitem{Add your personal scholarships, competition awards, paper recognitions, or ranking-based honors here.}
+\end{itemize}
+
+\section*{Technical Skills}
+\begin{tabularx}{\textwidth}{@{}p{0.18\textwidth}X@{}}
+Programming & Python, C/C++, MATLAB, LaTeX, Linux, Git \\
+Robotics / AI & PyTorch, reinforcement learning basics, literature review, experiment design, technical writing \\
+Languages & Chinese (native), English (working proficiency) \\
+\end{tabularx}
+
+\vspace{0.6em}
+{\footnotesize\color{textgray}Note: This is a sample academic CV drafted to match the clean, traditional style you liked. Replace placeholders (email, GPA, advisor, awards, links) with your exact information before sending it to faculty members.}
+
+\end{document}
