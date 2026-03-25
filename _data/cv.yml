@@ -1,10 +1,10 @@
 cv:
   name: Chuyao Fu
-  label: Undergraduate Student
-  email: z9054244@gmail.com
+  label: Undergraduate Student in Electronic Information Engineering
+  email: 12310306@mail.sustech.edu.cn
   location: Shenzhen, China
   image: ""
-  summary: Undergraduate student at Southern University of Science and Technology (SUSTech).
+  summary: "Information Engineering undergraduate at SUSTech seeking research opportunities in embodied AI and robot learning."
 
   social_networks:
     - network: GitHub
@@ -20,36 +20,118 @@ cv:
       - institution: Southern University of Science and Technology (SUSTech)
         location: Shenzhen, China
         url: https://www.sustech.edu.cn/en/
-        area: ""
-        studyType: Bachelor
-        start_date: ""
-        end_date: ""
+        area: Electronic Information Engineering
+        studyType: B.Eng.
+        start_date: Sept. 2023
+        end_date: Jun. 2027
         highlights:
-          - ""
+          - "GPA: 3.90/4.00 · Rank: 3/46"
+          - "Primarily A+/A courses: Data Structure & Algorithm, Probability & Statistics, Machine Learning, Robotic Motion and Control, Microcomputer Principles, Digital Signal Processing, Analog/Digital Circuits, Signals and Systems"
+          - "Research Interests: Embodied AI, Vision-Language-Action Models, World Models, Reinforcement Learning"
 
-    # Experience:
-    #   - company: Your Company
-    #     position: Your Position
-    #     location: Location
-    #     start_date: YYYY
-    #     end_date: YYYY
-    #     summary: Description of your role.
+    Research Experience:
+      - company: Robotics and Computer Vision Lab, SUSTech
+        position: Undergraduate Researcher
+        location: Shenzhen, China
+        start_date: Sept. 2024
+        end_date: Present
+        summary: "Supervisor: Prof. Hong Zhang"
+        highlights:
+          - "Topics: Social Navigation and Autonomous Driving"
+          - "Contributed to TPT-Bench data collection for social navigation; gained hands-on experience with ROS bag processing, multisensor synchronization, and data preprocessing (paper under review at IJRR)"
+          - "Independently proposed ProDrive, a proactive autonomous driving framework jointly training a driving planner and BEV world model via ego-environment co-evolution"
+          - "Demonstrated stronger performance than prior world-model-based driving frameworks on NAVSIM v1"
+          - "First author; led method design, experiments, and manuscript preparation. Accepted by CVPR 2026 GigaBrain Challenge Workshop"
 
-    # Awards:
-    #   - title: Award Name
-    #     date: YYYY
-    #     awarder: Organization
-    #     summary: Description.
+      - company: HMI Lab, School of Computer Science, Peking University
+        position: Undergraduate Researcher
+        location: Beijing, China
+        start_date: Jun. 2025
+        end_date: Present
+        summary: "Supervisor: Prof. Shanghang Zhang"
+        highlights:
+          - "Topic: Vision-Language-Action Models, World Models, and Latent-Space Simulation"
+          - "Proposed Token-World, a latent world model for VLA systems predicting future visual tokens directly in token space, eliminating intermediate RGB reconstruction"
+          - "Designed a spatio-temporal multimodal Transformer with GRU-enhanced temporal modeling for action-conditioned long-horizon prediction"
+          - "Combined flow matching with diffusion forcing to improve rollout stability and reduce autoregressive error accumulation"
+          - "Outperformed strong RGB-based world-model baselines on RoboTwin in rollout error, semantic similarity, and inference speed"
+          - "First author; submitted to ECCV 2026 (under review)"
+
+      - company: Beijing Academy of Artificial Intelligence (BAAI)
+        position: Research Intern, Embodied Multimodal Large Models Research Center
+        location: Beijing, China
+        start_date: Jun. 2025
+        end_date: Nov. 2025
+        summary: "Mentor: Xiaojie Zhang"
+        highlights:
+          - "Topic: Reinforcement Learning for VLA Models and Flow-Based Robot Policies"
+          - "Reproduced representative VLA-RL and robot policy post-training frameworks including RLinf, SimpleVLA-RL, RL4VLA, and DSRL"
+          - "Investigated RL objectives for flow-based robot policies, focusing on training stability, inference efficiency, and compatibility with modern VLA backbones"
+          - "Contributed to early development of the FORCE project; co-authored an ICML 2026 submission (under review)"
+
+    Work Experience:
+      - company: XtalPi
+        position: Research Intern, Future Chemistry Department
+        location: Shenzhen, China
+        start_date: Jan. 2026
+        end_date: Present
+        highlights:
+          - "Topic: Humanoid Robots for Laboratory Automation; VLA Policy Learning and Deployment"
+          - "Trained VLA policies for humanoid robot manipulation in laboratory environments, focusing on tool use and structured object interaction"
+          - "Deployed policies on real humanoid robot platforms and integrated perception, policy inference, and control for real-world execution"
+          - "Developed manipulation capabilities for representative laboratory instruments in automated bio-lab scenarios"
+          - "Conducted iterative real-robot evaluation and failure analysis to improve deployment robustness"
+
+      - company: Beijing Academy of Artificial Intelligence (BAAI)
+        position: Research Intern, Embodied Multimodal Large Models Research Center
+        location: Beijing, China
+        start_date: Jun. 2025
+        end_date: Nov. 2025
+        highlights:
+          - "Topic: Pretraining Data Pipelines for VLA and Vision-Language Models"
+          - "Processed embodied datasets including AgiBot-World and DROID for large-scale VLA pretraining"
+          - "Performed action normalization, action tokenization, and dataset reorganization into structured JSON training format"
+          - "Contributed to VLM data preprocessing by adding grounding boxes as object-aware visual-language supervision"
+
+    Selected Projects:
+      - company: RL-based Locomotion Control for Unitree G1
+        position: Project Leader
+        location: ""
+        start_date: Mar. 2026
+        end_date: Present
+        highlights:
+          - "Developed an RL-based humanoid locomotion pipeline with simulation training, cross-simulator validation, and real-robot deployment on Unitree G1"
+
+      - company: Raspberry Pi-based Robotic Arm Control
+        position: Project Leader
+        location: ""
+        start_date: Nov. 2025
+        end_date: Jan. 2026
+        highlights:
+          - "Implemented GPIO- and PWM-based motor control on Raspberry Pi to drive a 3D-printed robotic arm for grasping and manipulation"
+
+      - company: Desktop Manipulation via 3D Diffusion Policy
+        position: Project Leader
+        location: ""
+        start_date: Mar. 2025
+        end_date: Jun. 2025
+        highlights:
+          - "Built a 3D manipulation learning pipeline with RealSense D435 sensing, manual camera calibration, point-cloud generation, and Diffusion Policy training for tabletop tasks"
 
     Skills:
-      - name: ""
+      - name: Programming
         level: ""
-        icon: fa-solid fa-hashtag
-        keywords: ""
+        icon: fa-solid fa-code
+        keywords: "Python, C/C++, MATLAB, LaTeX, Linux, Git"
+
+      - name: AI / Robotics
+        level: ""
+        icon: fa-solid fa-robot
+        keywords: "PyTorch, Reinforcement Learning, Literature Review, Experiment Design, Technical Writing"
 
     Languages:
       - name: Chinese
         summary: "Native speaker"
 
       - name: English
-        summary: "Fluent"
+        summary: "Working proficiency"

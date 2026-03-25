@@ -2,7 +2,7 @@
 layout: about
 title: about
 permalink: /
-subtitle: Undergraduate at <a href='https://www.sustech.edu.cn/en/'>SUSTech</a>
+subtitle: Undergraduate @ SUSTech <a href='https://rcvlab.eee.sustech.edu.cn/'>Robotics and CV Lab</a> | Intern @ PKU HMI Lab
 
 profile:
   align: right
@@ -26,6 +26,6 @@ latest_posts:
   limit: 3 # leave blank to include all the blog posts
 ---
 
-Welcome! I am an undergraduate student at [Southern University of Science and Technology (SUSTech)](https://www.sustech.edu.cn/en/) in Shenzhen, China.
+I am Chuyao Fu, a third-year undergraduate student in Electronic and Computer Engineering at the Southern University of Science and Technology (SUSTech). My research focuses on world models, vision-language-action models, and autonomous driving. I am particularly interested in how intelligent systems can model future dynamics and make effective decisions in complex, dynamic environments. More broadly, I am excited about embodied AI and scalable approaches to perception, prediction, and planning.
 
 <!-- Write more about yourself here. You can describe your research interests, experiences, and goals. -->
