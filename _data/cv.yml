@@ -4,7 +4,7 @@ cv:
   email: 12310306@mail.sustech.edu.cn
   location: Shenzhen, China
   image: ""
-  summary: "Undergraduate researcher in embodied AI, world models, and multimodal learning."
+  summary: "Undergraduate researcher in Vision-Language-Action Models, World Models, and Autonomous Driving."
 
   social_networks:
     - network: GitHub
@@ -27,7 +27,7 @@ cv:
         highlights:
           - "GPA: 3.90/4.00 · Rank: 3/46"
           - "Primarily A+/A courses: Data Structure & Algorithm, Probability & Statistics, Machine Learning, Robotic Motion and Control, Microcomputer Principles, Digital Signal Processing, Analog/Digital Circuits, Signals and Systems"
-          - "Research Interests: Embodied AI, Vision-Language-Action Models, World Models, Reinforcement Learning"
+          - "Research Interests: Vision-Language-Action Models, World Models, Autonomous Driving"
 
     Research Experience:
       - company: Robotics and Computer Vision Lab, SUSTech
@@ -135,4 +135,4 @@ cv:
         summary: "Native speaker"
 
       - name: English
-        summary: "Working proficiency"
+        summary: "Working proficiency, TOFEL iBT 100"
