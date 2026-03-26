@@ -1,10 +1,11 @@
 cv:
-  name: Chuyao Fu
+  name: Chuyao FU
   label: Undergraduate Student in Electronic Information Engineering
   email: 12310306@mail.sustech.edu.cn
   location: Shenzhen, China
   image: ""
-  summary: "Undergraduate researcher in Vision-Language-Action Models, World Models, and Autonomous Driving."
+  summary: ""
+  research_interests: "Vision-Language-Action Models, World Models, Autonomous Driving"
 
   social_networks:
     - network: GitHub
@@ -21,13 +22,12 @@ cv:
         location: Shenzhen, China
         url: https://www.sustech.edu.cn/en/
         area: Electronic Information Engineering
-        studyType: B.Eng.
+        studyType: Bachelor of Engineering
         start_date: Sept. 2023
         end_date: Jun. 2027
         highlights:
           - "GPA: 3.90/4.00 · Rank: 3/46"
-          - "Primarily A+/A courses: Data Structure & Algorithm, Probability & Statistics, Machine Learning, Robotic Motion and Control, Microcomputer Principles, Digital Signal Processing, Analog/Digital Circuits, Signals and Systems"
-          - "Research Interests: Vision-Language-Action Models, World Models, Autonomous Driving"
+          - "Selected Coursework: Data Structures and Algorithm Analysis, Probability and Statistics, Machine Learning, Robotic Motion and Control, Digital Signal Processing, Signals and Systems, Analog Circuits, Digital Circuits"
 
     Research Experience:
       - company: Robotics and Computer Vision Lab, SUSTech
@@ -94,8 +94,8 @@ cv:
           - "Contributed to VLM data preprocessing by adding grounding boxes as object-aware visual-language supervision"
 
     Selected Projects:
-      - company: Raspberry Pi-based Robotic Arm Control
-        position: Project Lead
+      - company: Project Lead
+        position: Raspberry Pi-based Robotic Arm Control
         location: ""
         start_date: Nov. 2025
         end_date: Jan. 2026
@@ -103,8 +103,8 @@ cv:
           - "Developed a Raspberry Pi-based control system for a 3D-printed robotic arm, using GPIO PWM signals to actuate an SG52 servo for gripper control and four-phase eight-step drive signals for 4-phase 5-wire stepper motors at the arm joints"
           - "Implemented two interaction modes: infrared remote control via lirc and camera-based gesture control using MediaPipe for real-time arm manipulation"
 
-      - company: Desktop Manipulation via 3D Diffusion Policy
-        position: Project Lead
+      - company: Project Lead
+        position: Desktop Manipulation via 3D Diffusion Policy
         location: ""
         start_date: Mar. 2025
         end_date: Jun. 2025
@@ -113,8 +113,8 @@ cv:
           - "Validated the system on real tasks including lemon-in-bowl placement, bowl lifting, and drawer pushing using point-cloud observations from a RealSense D435 and an ARX X5 robotic arm"
 
     Leadership and Service:
-      - company: Class Leader, Class 2303
-        position: Class Committee
+      - company: Project Lead
+        position: Class Leader, Class 2303
         location: ""
         start_date: "2024"
         end_date: "2025"
@@ -122,8 +122,8 @@ cv:
           - "Led class operations and activities, including event planning, logistics coordination, routine administration, and award application materials"
           - "Class received honors including Excellent Undergraduate Academic Style, Best Sports Team, and Best Popularity Class"
 
-      - company: House Division Lead, Street Dance Club
-        position: Student Organization
+      - company: House Division Lead
+        position: Street Dance Club
         location: ""
         start_date: "2024"
         end_date: "2025"

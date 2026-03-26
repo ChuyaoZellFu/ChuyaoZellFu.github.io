@@ -63,7 +63,7 @@ layout: default
         <!-- Header/Contact Information -->
         {% if cv.name or cv.label or cv.location or cv.email or cv.phone or cv.website %}
           <div class="card mt-3 p-3">
-            <h3 class="card-title font-weight-medium">Contact Information</h3>
+            <h3 class="card-title font-weight-medium">Basics</h3>
             <table class="table table-cv table-sm table-borderless">
               {% if cv.name %}
                 <tr>
@@ -108,15 +108,13 @@ layout: default
                   </td>
                 </tr>
               {% endif %}
+              {% if cv.research_interests %}
+                <tr>
+                  <td class="p-1 pr-2 font-weight-bold"><b>Research Interests</b></td>
+                  <td class="p-1 pl-2 font-weight-light">{{ cv.research_interests }}</td>
+                </tr>
+              {% endif %}
             </table>
-          </div>
-        {% endif %}
-
-        <!-- Summary -->
-        {% if cv.summary %}
-          <div class="card mt-3 p-3">
-            <h3 class="card-title font-weight-medium">Professional Summary</h3>
-            <p>{{ cv.summary | markdownify | remove: '<p>' | remove: '</p>' }}</p>
           </div>
         {% endif %}
 
