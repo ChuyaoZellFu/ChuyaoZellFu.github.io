@@ -4,7 +4,7 @@ cv:
   email: 12310306@mail.sustech.edu.cn
   location: Shenzhen, China
   image: ""
-  summary: "Information Engineering undergraduate at SUSTech seeking research opportunities in embodied AI and robot learning."
+  summary: "Undergraduate researcher in embodied AI, world models, and multimodal learning."
 
   social_networks:
     - network: GitHub
@@ -94,40 +94,41 @@ cv:
           - "Contributed to VLM data preprocessing by adding grounding boxes as object-aware visual-language supervision"
 
     Selected Projects:
-      - company: RL-based Locomotion Control for Unitree G1
-        position: Project Leader
-        location: ""
-        start_date: Mar. 2026
-        end_date: Present
-        highlights:
-          - "Developed an RL-based humanoid locomotion pipeline with simulation training, cross-simulator validation, and real-robot deployment on Unitree G1"
-
       - company: Raspberry Pi-based Robotic Arm Control
-        position: Project Leader
+        position: Project Lead
         location: ""
         start_date: Nov. 2025
         end_date: Jan. 2026
         highlights:
-          - "Implemented GPIO- and PWM-based motor control on Raspberry Pi to drive a 3D-printed robotic arm for grasping and manipulation"
+          - "Developed a Raspberry Pi-based control system for a 3D-printed robotic arm, using GPIO PWM signals to actuate an SG52 servo for gripper control and four-phase eight-step drive signals for 4-phase 5-wire stepper motors at the arm joints"
+          - "Implemented two interaction modes: infrared remote control via lirc and camera-based gesture control using MediaPipe for real-time arm manipulation"
 
       - company: Desktop Manipulation via 3D Diffusion Policy
-        position: Project Leader
+        position: Project Lead
         location: ""
         start_date: Mar. 2025
         end_date: Jun. 2025
         highlights:
-          - "Built a 3D manipulation learning pipeline with RealSense D435 sensing, manual camera calibration, point-cloud generation, and Diffusion Policy training for tabletop tasks"
+          - "Built and deployed a real-world 3D Diffusion Policy (DP3) pipeline for tabletop manipulation, including multimodal data collection, camera calibration, point-cloud preprocessing, policy training, and online inference"
+          - "Validated the system on real tasks including lemon-in-bowl placement, bowl lifting, and drawer pushing using point-cloud observations from a RealSense D435 and an ARX X5 robotic arm"
 
-    Skills:
-      - name: Programming
-        level: ""
-        icon: fa-solid fa-code
-        keywords: "Python, C/C++, MATLAB, LaTeX, Linux, Git"
+    Leadership and Service:
+      - company: Class Leader, Class 2303
+        position: Class Committee
+        location: ""
+        start_date: "2024"
+        end_date: "2025"
+        highlights:
+          - "Led class operations and activities, including event planning, logistics coordination, routine administration, and award application materials"
+          - "Class received honors including Excellent Undergraduate Academic Style, Best Sports Team, and Best Popularity Class"
 
-      - name: AI / Robotics
-        level: ""
-        icon: fa-solid fa-robot
-        keywords: "PyTorch, Reinforcement Learning, Literature Review, Experiment Design, Technical Writing"
+      - company: House Division Lead, Street Dance Club
+        position: Student Organization
+        location: ""
+        start_date: "2024"
+        end_date: "2025"
+        highlights:
+          - "Led the House division by coordinating weekly training with instructors and organizing two campus street dance performances, including rehearsal planning and member coordination"
 
     Languages:
       - name: Chinese

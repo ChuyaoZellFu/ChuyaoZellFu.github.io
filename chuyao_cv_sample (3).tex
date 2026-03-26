@@ -34,23 +34,21 @@
 {\centering
     {\LARGE\bfseries Chuyao Fu}\\[0.45em]
     {\small
-    \faEnvelope\ \href{mailto:your.email@outlook.com}{12310306@mail.sustech.edu.cn}
+    \faEnvelope\ \href{mailto:12310306@mail.sustech.edu.cn}{12310306@mail.sustech.edu.cn}
     \contactsep
-    \faGithub\ \href{https://github.com/yourname}{github.com/ChuyaoZellFu}
+    \faGithub\ \href{https://github.com/ChuyaoZellFu}{github.com/ChuyaoZellFu}
     \contactsep
-    \faGlobe\ \href{https://your-website.com}{https://chuyaozellfu.github.io/}
+    \faGlobe\ \href{https://chuyaozellfu.github.io/}{chuyaozellfu.github.io}
     \contactsep
-    \faPhone\ +86-153-4733-9211
+    \faPhone\ +86 153 4733 9211
     }\\[0.3em]
-    {\small \color{textgray}Shenzhen, China \;\; / \;\; Information Engineering undergraduate seeking research opportunities in embodied AI and robot learning}
+    {\small \color{textgray}Shenzhen, China \;\; / \;\; Undergraduate researcher in embodied AI, world models, and multimodal learning}
 \par}
 
 \section*{Education}
-\entry{Southern University of Science and Technology}{Sept. 2023 - Jun. 2027}{B.Eng. in Electronic Information Engineering}{GPA: 3.90/4.00 Rank: 3/46}
+\entry{Southern University of Science and Technology}{Sep. 2023 -- Jun. 2027 (expected)}{B.Eng. in Electronic Information Engineering}{GPA: 3.90/4.00 \;\; Rank: 3/46}
 \begin{itemize}[leftmargin=1.2em, topsep=0.2em, itemsep=0.18em]
-  \cvitem{Primarily A+/A foundational courses: Data Structure and Algorithm Analysis, Probability and Statistics, Machine Learning, Robotic Motion and Control Method, Microcomputer Principles and Microsystems, Digital Signal Processing, Analog/Digital Circuits, Signal and Systems}
-  \cvitem{Research Interest: Embodied AI, Vision-Language-Action Models, World Models, Reinforcement Learning}
-
+  \cvitem{\textbf{Selected Coursework:} Data Structures and Algorithm Analysis, Probability and Statistics, Machine Learning, Robotic Motion and Control, Digital Signal Processing, Signals and Systems, Analog Circuits, Digital Circuits}
 \end{itemize}
 
 \section*{Publications}
@@ -137,12 +135,12 @@ Y. Lou, X. Chi, X. Zhang, Z. Qian, C. Li, R. Zhang, Y. Lyu, G. Song, \textbf{Chu
   \end{itemize}
 \end{itemize}
 
-\entry{Beijing Academy of Artificial Intelligence}{Jun. 2025 -- Nov. 2025}{Research Intern, Embodied Multimodal Large Models Research Center}{Beijing}
+\entry{Beijing Academy of Artificial Intelligence}{Jun. 2025 -- Nov. 2025}{Research Intern (Data Pipeline), Embodied Multimodal Large Models Research Center}{Beijing}
 \begin{itemize}[leftmargin=1.2em, topsep=0.2em, itemsep=0.18em]
   \cvitem{\textbf{Topic:} Pretraining Data Pipelines for Vision-Language-Action and Vision-Language Models.}
   \begin{itemize}[leftmargin=1.4em, topsep=0.15em, itemsep=0.12em]
-    \item Processed embodied datasets including \textit{AgiBot-World} and \textit{DROID} for large-scale VLA pretraining.
-    \item Performed action normalization, action tokenization, and dataset reorganization into structured \texttt{json} training format.
+    \item Processed large-scale embodied datasets including \textit{AgiBot-World} and \textit{DROID} for VLA pretraining.
+    \item Performed action normalization, action tokenization, and dataset reorganization into structured \texttt{JSON} training format.
     \item Standardized multimodal trajectory data for compatibility with large-scale VLA pretraining pipelines.
     \item Contributed to VLM data preprocessing by adding grounding boxes as object-aware visual-language supervision.
   \end{itemize}
@@ -150,43 +148,56 @@ Y. Lou, X. Chi, X. Zhang, Z. Qian, C. Li, R. Zhang, Y. Lyu, G. Song, \textbf{Chu
 
 \section*{Selected Course Projects}
 
-\entry{RL-based Locomotion Control for Unitree G1}{Mar. 2026 -- Present}{Humanoid Reinforcement Learning}{Project Leader}
+% \entry{RL-based Locomotion Control for Unitree G1}{Mar. 2026 -- Present}{Humanoid Reinforcement Learning}{Project Lead}
+% \begin{itemize}[leftmargin=1.2em, topsep=0.2em, itemsep=0.18em]
+%   \cvitem{Building on existing humanoid locomotion frameworks, training and adapting reinforcement learning policies for task-specific behaviors on Unitree G1.}
+%   \cvitem{Gaining hands-on experience with reinforcement learning, Isaac Sim-based training, and real-robot deployment for humanoid control.}
+% \end{itemize}
+
+\entry{Raspberry Pi-based Robotic Arm Control}{Nov. 2025 -- Jan. 2026}{Embedded Systems / Robotics}{Project Lead}
 \begin{itemize}[leftmargin=1.2em, topsep=0.2em, itemsep=0.18em]
-  \cvitem{Developed an RL-based humanoid locomotion pipeline with simulation training, cross-simulator validation, and real-robot deployment on Unitree G1.}
+  \cvitem{Developed a Raspberry Pi-based control system for a 3D-printed robotic arm, using GPIO PWM signals to actuate an SG52 servo for gripper control and four-phase eight-step drive signals for 4-phase 5-wire stepper motors at the arm joints.}
+  \cvitem{Implemented two interaction modes: infrared remote control via \texttt{lirc} and camera-based gesture control using MediaPipe for real-time arm manipulation.}
 \end{itemize}
 
-\entry{Raspberry Pi-based Robotic Arm Control}{Nov. 2025 -- Jan. 2026}{Embedded Systems / Robotics}{Project Leader}
+\entry{Desktop Manipulation via 3D Diffusion Policy}{Mar. 2025 -- Jun. 2025}{Robot Learning / 3D Vision}{Project Lead}
 \begin{itemize}[leftmargin=1.2em, topsep=0.2em, itemsep=0.18em]
-  \cvitem{Implemented GPIO- and PWM-based motor control on Raspberry Pi to drive a 3D-printed robotic arm for grasping and manipulation.}
+  \cvitem{Built and deployed a real-world 3D Diffusion Policy (DP3) pipeline for tabletop manipulation, including multimodal data collection, camera calibration, point-cloud preprocessing, policy training, and online inference.}
+  \cvitem{Validated the system on real tasks including lemon-in-bowl placement, bowl lifting, and drawer pushing using point-cloud observations from a RealSense D435 and an ARX X5 robotic arm.}
 \end{itemize}
 
-\entry{Desktop Manipulation via 3D Diffusion Policy}{Mar. 2025 -- Jun. 2025}{Robot Learning / 3D Vision}{Project Leader}
-\begin{itemize}[leftmargin=1.2em, topsep=0.2em, itemsep=0.18em]
-  \cvitem{Built a 3D manipulation learning pipeline with RealSense D435 sensing, manual camera calibration, point-cloud generation, and Diffusion Policy training for tabletop tasks.}
-\end{itemize}
+% \entry{2048 Game System}{Apr. 2024 -- Jun. 2024}{Java / Software Development}{Project Lead}
+% \begin{itemize}[leftmargin=1.2em, topsep=0.2em, itemsep=0.18em]
+%   \cvitem{Independently built a Java-based 2048 game from scratch, covering GUI frontend design, backend logic implementation, and persistent user data management.}
+%   \cvitem{Implemented core modules including account login/registration, save/load, game restart, multiple gameplay modes, and keyboard/button-based control.}
+% \end{itemize}
 
 \section*{Leadership and Service}
-\entry{Class Leader, Class 2303}{2024 -- 2025}{University Student Affairs / Class Committee}{}
+
+\entry{Class Leader, Class 2303}{2024 -- 2025}{Class Committee}{}
 \begin{itemize}[leftmargin=1.2em, topsep=0.2em, itemsep=0.18em]
-  \cvitem{Organized class activities and a team-building event in Damesha, including planning, vendor coordination, budgeting, and procurement.}
-  \cvitem{Coordinated materials for class awards; the class received honors including Excellent Undergraduate Academic Style, Five Four Red Flag Youth League, Best Sports Team, and Best Popularity Class.}
-  \cvitem{Managed monthly class fee collection, youth league registration, member evaluation, meeting logistics, and routine communication of academic and administrative notices.}
+  \cvitem{Led class operations and activities, including event planning, logistics coordination, routine administration, and award application materials; the class received honors including \textit{Excellent Undergraduate Academic Style}, \textit{Best Sports Team}, and \textit{Best Popularity Class}.}
 \end{itemize}
 
-\section*{Honors and Awards}
+\entry{House Division Lead, Street Dance Club}{2024 -- 2025}{Student Organization}{}
 \begin{itemize}[leftmargin=1.2em, topsep=0.2em, itemsep=0.18em]
-  \cvitem{Class-level and university honors through collective leadership contributions, including Excellent Undergraduate Academic Style and Five Four Red Flag Youth League.}
-  \cvitem{Add your personal scholarships, competition awards, paper recognitions, or ranking-based honors here.}
+  \cvitem{Led the House division by coordinating weekly training with instructors and organizing two campus street dance performances, including rehearsal planning and member coordination.}
 \end{itemize}
 
-\section*{Technical Skills}
-\begin{tabularx}{\textwidth}{@{}p{0.18\textwidth}X@{}}
-Programming & Python, C/C++, MATLAB, LaTeX, Linux, Git \\
-Robotics / AI & PyTorch, reinforcement learning basics, literature review, experiment design, technical writing \\
-Languages & Chinese (native), English (working proficiency) \\
-\end{tabularx}
+% \section*{Honors and Awards}
+% \begin{itemize}[leftmargin=1.2em, topsep=0.2em, itemsep=0.18em]
+%   \cvitem{Class-level and university honors through collective leadership contributions, including Excellent Undergraduate Academic Style and Five Four Red Flag Youth League.}
+%   \cvitem{Add your personal scholarships, competition awards, paper recognitions, or ranking-based honors here.}
+% \end{itemize}
+
+% \section*{Technical Skills}
+% \begin{tabularx}{\textwidth}{@{}p{0.18\textwidth}X@{}}
+% Programming & Python, C/C++, MATLAB, LaTeX, Linux, Git \\
+% Robotics / AI & PyTorch, reinforcement learning basics, literature review, experiment design, technical writing \\
+% Languages & Chinese (native), English (working proficiency) \\
+% \end{tabularx}
 
 \vspace{0.6em}
-{\footnotesize\color{textgray}Note: This is a sample academic CV drafted to match the clean, traditional style you liked. Replace placeholders (email, GPA, advisor, awards, links) with your exact information before sending it to faculty members.}
+% {\footnotesize\color{textgray}Note: This is a sample academic CV drafted to match the clean, traditional style you liked. Replace placeholders (email, GPA, advisor, awards, links) with your exact information before sending it to faculty members.}
 
 \end{document}
