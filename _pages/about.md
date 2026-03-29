@@ -27,6 +27,6 @@ I am Chuyao Fu, a third-year undergraduate student in Electronic and Computer En
 
 In SUSTech, I am supervised by Prof. [**Qinghu Meng**](https://faculty.sustech.edu.cn/?tagid=mengqh&iscss=1&snapid=1&orderby=date&go=2&lang=en) and Prof. [**Hong Zhang**](https://faculty.sustech.edu.cn/?tagid=zhangh33&iscss=1&snapid=1&orderby=date&go=2). I am also a research intern at the PKU HMI Lab, supervised by Prof. [**Shanghang Zhang**](https://cs.pku.edu.cn/info/1089/1747.htm).
 
-I am interested in the development of intelligent robotic systems. Rather than studying perception or control in isolation, I am particularly interested in the representations and structures that connect perception with generalizable decision-making, especially in complex, dynamic environments.
+I am interested in the development of intelligent robotic systems. More concisely, I feel that my true interest lies in discovering the representations and structures that connect reliable perception with generalizable decision-making, especially in complex, dynamic environments.
 
 <!-- Write more about yourself here. You can describe your research interests, experiences, and goals. -->
