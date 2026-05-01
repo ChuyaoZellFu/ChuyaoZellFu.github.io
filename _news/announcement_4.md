@@ -1,8 +1,8 @@
 ---
 layout: post
-date: 2026-03-24 10:00:00+0800
+date: 2026-05-01 10:00:00+0800
 inline: true
 related_posts: false
 ---
 
-**ProDrive** and **EchoArena** are accepted by [CVPR 2026 GigaBrain Challenge Workshop](https://gigaai-research.github.io/GigaBrain-Challenge-2026/)!
+**Mask World Model** is accepted by ICML 2026.

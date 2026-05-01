@@ -5,4 +5,4 @@ inline: true
 related_posts: false
 ---
 
-Submitted two papers to ICML 2026!
+Submitted two papers to ICML 2026.
